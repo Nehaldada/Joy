@@ -1,0 +1,10 @@
+stages:
+  - setup
+
+setup_environment:
+  stage: setup
+  image: python:3.9  
+  script:
+    - pip install python-telegram-bot --upgrade  
+    - chmod +x *
+    - python flash.py
